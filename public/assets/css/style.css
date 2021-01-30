@@ -1,0 +1,285 @@
+/* Font */
+
+@font-face {
+  font-family: "Lato Light";
+
+  src: url("../font/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "Lato Regular";
+
+  src: url("../font/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato Bold";
+
+  src: url("../font/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lato Black";
+
+  src: url("../font/Lato-Black.ttf");
+}
+
+.lato-light {
+  font-family: "Lato Light";
+}
+
+.lato-reg {
+  font-family: "Lato Regular";
+}
+
+.lato-bold {
+  font-family: "Lato Bold";
+}
+
+.lato-bold {
+  font-family: "Lato Black";
+}
+
+.link-text {
+  --tw-text-opacity: 1;
+  color: rgba(235, 200, 92, var(--tw-text-opacity));
+}
+
+.link-text:hover {
+  --tw-text-opacity: 1;
+  color: rgba(229, 184, 46, var(--tw-text-opacity));
+}
+
+.link-text {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.link-text-2 {
+  --tw-text-opacity: 1;
+  color: rgba(62, 62, 62, var(--tw-text-opacity));
+}
+
+.link-text-2:hover {
+  --tw-text-opacity: 1;
+  color: rgba(235, 200, 92, var(--tw-text-opacity));
+}
+
+.link-text-2 {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.link-text-bold {
+  --tw-text-opacity: 1;
+  color: rgba(235, 200, 92, var(--tw-text-opacity));
+}
+
+.link-text-bold:hover {
+  --tw-text-opacity: 1;
+  color: rgba(229, 184, 46, var(--tw-text-opacity));
+}
+
+.link-text-bold {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  font-family: "Lato Bold";
+  font-family: "Lato Black";
+}
+
+.link-text-2-bold {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgba(62, 62, 62, var(--tw-text-opacity));
+}
+
+.link-text-2-bold:hover {
+  --tw-text-opacity: 1;
+  color: rgba(235, 200, 92, var(--tw-text-opacity));
+}
+
+.link-text-2-bold {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+body {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(62, 62, 62, var(--tw-text-opacity));
+  font-family: "Lato Regular";
+}
+
+/* Navbar */
+
+#navbar {
+  transition: top 0.3s;
+}
+
+/* Button */
+
+.main-btn {
+  --tw-bg-opacity: 1;
+  background-color: rgba(241, 215, 137, var(--tw-bg-opacity));
+}
+
+.main-btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(235, 200, 92, var(--tw-bg-opacity));
+}
+
+.main-btn {
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  letter-spacing: 0.05em;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  font-family: "Lato Bold";
+  font-family: "Lato Black";
+}
+
+.secondary-btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(62, 62, 62, var(--tw-bg-opacity));
+}
+
+.secondary-btn {
+  --tw-border-opacity: 1;
+  border-color: rgba(204, 204, 204, var(--tw-border-opacity));
+}
+
+.secondary-btn:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(62, 62, 62, var(--tw-border-opacity));
+}
+
+.secondary-btn {
+  border-radius: 9999px;
+  border-width: 1px;
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.secondary-btn:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.secondary-btn {
+  letter-spacing: 0.05em;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  font-family: "Lato Bold";
+  font-family: "Lato Black";
+}
+
+/* Image Container */
+
+.img-container-70 {
+  width: 100%;
+  padding-top: 70%;
+}
+
+.img-container-75 {
+  width: 100%;
+  padding-top: 75%;
+}
+
+.img-container-100 {
+  width: 100%;
+  padding-top: 100%;
+}
+
+.img-container-120 {
+  width: 100%;
+  padding-top: 120%;
+}
+
+.img-container-130 {
+  width: 100%;
+  padding-top: 130%;
+}
+
+.img-container-150 {
+  width: 100%;
+  padding-top: 150%;
+}
+
+.img-container-170 {
+  width: 100%;
+  padding-top: 170%;
+}
+
+/* Collapse Button */
+
+.collapsibleFAQ {
+  cursor: pointer;
+  width: 100%;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.collapsibleFAQ:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.activeFAQ,
+    .collapsibleFAQ:hover {
+  background-color: #fff;
+}
+
+.activeFAQ, .collapsibleFAQ:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(204, 204, 204, var(--tw-border-opacity));
+}
+
+.collapsibleFAQ:after {
+  color: #555;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.activeFAQ:after {
+  transform: rotate(180deg);
+  margin-bottom: -1.25rem;
+}
+
+.FAQcontent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

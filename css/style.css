@@ -1,0 +1,138 @@
+/* Font */
+@font-face {
+    font-family: "Lato Light";
+    src: url("../font/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../font/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url("../font/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato Black";
+    src: url("../font/Lato-Black.ttf");
+}
+
+.lato-light {
+    font-family: "Lato Light";
+}
+
+.lato-reg {
+    font-family: "Lato Regular";
+}
+
+.lato-bold {
+    font-family: "Lato Bold";
+}
+
+.lato-bold {
+    font-family: "Lato Black";
+}
+
+.link-text {
+    @apply text-thomry-gold hover:text-thomry-gold-dark duration-300 transition ease-in-out;
+}
+
+.link-text-2 {
+    @apply text-thomry-black hover:text-thomry-gold duration-300 transition ease-in-out;
+}
+
+.link-text-bold {
+    @apply text-thomry-gold hover:text-thomry-gold-dark duration-300 transition ease-in-out lato-bold;
+}
+
+.link-text-2-bold {
+    @apply text-thomry-black hover:text-thomry-gold duration-300 transition ease-in-out text-semibold;
+}
+
+body {
+    @apply text-thomry-black text-lg;
+    font-family: "Lato Regular";
+}   
+
+/* Navbar */
+#navbar {
+    transition: top 0.3s;
+}
+
+/* Button */
+.main-btn {
+    @apply bg-thomry-gold-light hover:bg-thomry-gold duration-300 transition ease-in-out py-3 px-5 tracking-wider rounded-full flex items-center text-xs lato-bold;
+}
+
+.secondary-btn {   
+     @apply border border-thomry-gray-ccc hover:text-white hover:bg-thomry-black hover:border-thomry-black duration-300 transition ease-in-out py-3 px-5 tracking-wider rounded-full flex items-center text-xs lato-bold;
+}
+
+/* Image Container */
+.img-container-70 {
+    width: 100%;
+    padding-top: 70%;
+}
+
+.img-container-75 {
+    width: 100%;
+    padding-top: 75%;
+}
+
+.img-container-100 {
+    width: 100%;
+    padding-top: 100%;
+}
+
+.img-container-120 {
+    width: 100%;
+    padding-top: 120%;
+}
+
+.img-container-130 {
+    width: 100%;
+    padding-top: 130%;
+}
+
+.img-container-150 {
+    width: 100%;
+    padding-top: 150%;
+}
+
+.img-container-170 {
+    width: 100%;
+    padding-top: 170%;
+}
+
+/* Collapse Button */
+.collapsibleFAQ {
+    cursor: pointer;
+    width: 100%;
+    @apply outline-none focus:outline-none;
+  }
+  
+  .activeFAQ,
+    .collapsibleFAQ:hover {
+    background-color: #fff;
+    @apply border-thomry-gray-ccc;
+  }
+  
+  .collapsibleFAQ:after {
+    color: #555;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .activeFAQ:after {
+    transform: rotate(180deg);
+    margin-bottom: -1.25rem;
+  }
+  
+  .FAQcontent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }

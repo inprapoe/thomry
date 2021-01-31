@@ -36,25 +36,37 @@
 }
 
 .link-text {
-    @apply text-thomry-gold hover:text-thomry-gold-dark duration-300 transition ease-in-out;
+    @apply transition duration-300 ease-in-out text-thomry-gold hover:text-thomry-gold-dark;
 }
 
 .link-text-2 {
-    @apply text-thomry-black hover:text-thomry-gold duration-300 transition ease-in-out;
+    @apply transition duration-300 ease-in-out text-thomry-black hover:text-thomry-gold;
+}
+
+.link-text-3 {
+    @apply transition duration-300 ease-in-out text-thomry-gray-ccc hover:text-thomry-gold;
 }
 
 .link-text-bold {
-    @apply text-thomry-gold hover:text-thomry-gold-dark duration-300 transition ease-in-out lato-bold;
+    @apply transition duration-300 ease-in-out text-thomry-gold hover:text-thomry-gold-dark lato-bold;
 }
 
 .link-text-2-bold {
-    @apply text-thomry-black hover:text-thomry-gold duration-300 transition ease-in-out text-semibold;
+    @apply font-semibold transition duration-300 ease-in-out text-thomry-black hover:text-thomry-gold;
+}
+
+.link-text-3-bold {
+    @apply font-semibold text-white transition duration-300 ease-in-out hover:text-thomry-gold;
 }
 
 body {
-    @apply text-thomry-black text-lg;
+    @apply text-lg text-thomry-black;
     font-family: "Lato Regular";
 }   
+
+html {
+    scroll-behavior: smooth;
+}
 
 /* Navbar */
 #navbar {
@@ -62,12 +74,16 @@ body {
 }
 
 /* Button */
-.main-btn {
-    @apply bg-thomry-gold-light hover:bg-thomry-gold duration-300 transition ease-in-out py-3 px-5 tracking-wider rounded-full flex items-center text-xs lato-bold;
+.primary-btn {
+    @apply flex items-center px-5 py-3 text-xs tracking-wider transition duration-300 ease-in-out rounded-full bg-thomry-gold hover:bg-thomry-gold-dark lato-bold;
 }
 
 .secondary-btn {   
-     @apply border border-thomry-gray-ccc hover:text-white hover:bg-thomry-black hover:border-thomry-black duration-300 transition ease-in-out py-3 px-5 tracking-wider rounded-full flex items-center text-xs lato-bold;
+     @apply flex items-center px-5 py-3 text-xs tracking-wider transition duration-300 ease-in-out border rounded-full border-thomry-gray-ccc hover:text-white hover:bg-thomry-black hover:border-thomry-black lato-bold;
+}
+
+.tertiary-btn {   
+    @apply flex items-center px-5 py-3 text-xs tracking-wider transition duration-300 ease-in-out bg-thomry-gold hover:bg-thomry-black hover:text-white lato-bold;
 }
 
 /* Image Container */
@@ -135,4 +151,36 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+  }
+
+  /* Collapse Button */
+.collapsibleFAQ2 {
+    cursor: pointer;
+    width: 100%;
+    @apply outline-none focus:outline-none;
+  }
+  
+  .activeFAQ2,
+    .collapsibleFAQ2:hover {
+    background-color: #1a1a1a;
+    @apply border-thomry-gray-ccc;
+  }
+  
+  .collapsibleFAQ2:after {
+    color: #555;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .activeFAQ2:after {
+    transform: rotate(180deg);
+    margin-bottom: -1.25rem;
+  }
+  
+  .FAQcontent2 {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #1a1a1a;
   }

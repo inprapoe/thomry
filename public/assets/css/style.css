@@ -76,6 +76,24 @@
   transition-duration: 300ms;
 }
 
+.link-text-3 {
+  --tw-text-opacity: 1;
+  color: rgba(204, 204, 204, var(--tw-text-opacity));
+}
+
+.link-text-3:hover {
+  --tw-text-opacity: 1;
+  color: rgba(235, 200, 92, var(--tw-text-opacity));
+}
+
+.link-text-3 {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
 .link-text-bold {
   --tw-text-opacity: 1;
   color: rgba(235, 200, 92, var(--tw-text-opacity));
@@ -115,12 +133,35 @@
   transition-duration: 300ms;
 }
 
+.link-text-3-bold {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.link-text-3-bold:hover {
+  --tw-text-opacity: 1;
+  color: rgba(235, 200, 92, var(--tw-text-opacity));
+}
+
+.link-text-3-bold {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
 body {
   font-size: 1.125rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgba(62, 62, 62, var(--tw-text-opacity));
   font-family: "Lato Regular";
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -131,17 +172,17 @@ body {
 
 /* Button */
 
-.main-btn {
-  --tw-bg-opacity: 1;
-  background-color: rgba(241, 215, 137, var(--tw-bg-opacity));
-}
-
-.main-btn:hover {
+.primary-btn {
   --tw-bg-opacity: 1;
   background-color: rgba(235, 200, 92, var(--tw-bg-opacity));
 }
 
-.main-btn {
+.primary-btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(229, 184, 46, var(--tw-bg-opacity));
+}
+
+.primary-btn {
   border-radius: 9999px;
   display: flex;
   align-items: center;
@@ -195,6 +236,43 @@ body {
 }
 
 .secondary-btn {
+  letter-spacing: 0.05em;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  font-family: "Lato Bold";
+  font-family: "Lato Black";
+}
+
+.tertiary-btn {
+  --tw-bg-opacity: 1;
+  background-color: rgba(235, 200, 92, var(--tw-bg-opacity));
+}
+
+.tertiary-btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(62, 62, 62, var(--tw-bg-opacity));
+}
+
+.tertiary-btn {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.tertiary-btn:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.tertiary-btn {
   letter-spacing: 0.05em;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -282,4 +360,47 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+/* Collapse Button */
+
+.collapsibleFAQ2 {
+  cursor: pointer;
+  width: 100%;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.collapsibleFAQ2:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.activeFAQ2,
+    .collapsibleFAQ2:hover {
+  background-color: #1a1a1a;
+}
+
+.activeFAQ2, .collapsibleFAQ2:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(204, 204, 204, var(--tw-border-opacity));
+}
+
+.collapsibleFAQ2:after {
+  color: #555;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.activeFAQ2:after {
+  transform: rotate(180deg);
+  margin-bottom: -1.25rem;
+}
+
+.FAQcontent2 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #1a1a1a;
 }

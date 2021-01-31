@@ -342,6 +342,8 @@ html {
 .activeFAQ, .collapsibleFAQ:hover {
   --tw-border-opacity: 1;
   border-color: rgba(204, 204, 204, var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(235, 200, 92, var(--tw-text-opacity));
 }
 
 .collapsibleFAQ:after {
@@ -384,6 +386,8 @@ html {
 .activeFAQ2, .collapsibleFAQ2:hover {
   --tw-border-opacity: 1;
   border-color: rgba(204, 204, 204, var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(235, 200, 92, var(--tw-text-opacity));
 }
 
 .collapsibleFAQ2:after {

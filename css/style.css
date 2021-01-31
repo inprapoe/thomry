@@ -132,7 +132,7 @@ html {
   .activeFAQ,
     .collapsibleFAQ:hover {
     background-color: #fff;
-    @apply border-thomry-gray-ccc;
+    @apply border-thomry-gray-ccc text-thomry-gold;
   }
   
   .collapsibleFAQ:after {
@@ -163,7 +163,7 @@ html {
   .activeFAQ2,
     .collapsibleFAQ2:hover {
     background-color: #1a1a1a;
-    @apply border-thomry-gray-ccc;
+    @apply border-thomry-gray-ccc text-thomry-gold;
   }
   
   .collapsibleFAQ2:after {
